@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+PreMain-Class: cn.rentaotao.agent.AgentExample
+Archiver-Version: Plexus Archiver
+Agent-Class: cn.rentaotao.agent.AgentExample
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Created-By: Apache Maven 3.8.6
+Build-Jdk: 11.0.11

@@ -1,0 +1,28 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: prometheus-example
+management:
+    endpoint:
+        metrics:
+            enabled: true
+        prometheus:
+            enabled: true
+        health:
+            enabled: true
+            show-details: always
+    endpoints:
+        web:
+            exposure:
+                include: prometheus,health,metrics
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+        # 所有统计数据通用的 tag
+        tags:
+            application: ${spring.application.name}
+    health:
+        defaults:
+            enabled: false
